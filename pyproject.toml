@@ -1,0 +1,25 @@
+[project]
+name = "browladymicrobladingstudio"
+version = "0.1.0"
+description = "Brow Lady Microblading Studio"
+readme = "README.md"
+authors = [
+    { name = "Mohit Shrestha", email = "contact@mohitshrestha.com.np" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "marimo[recommended]>=0.19.0",
+    "numpy>=2.4.0",
+    "tzdata>=2025.3",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+    "pytest>=9.0.2",
+    "ruff>=0.14.11",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I"]
+preview = true
